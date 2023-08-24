@@ -7,9 +7,13 @@ let decizii = document.getElementById("decizii");
 let programe = document.getElementById("programe");
 let note = document.getElementById("note");
 
+function compar(a,b){
+    return b.data().date_posted - a.data().date_posted;
+}
+
 activityDb.onSnapshot((snapshot) => {
     activities = snapshot.docs;
-
+    activities.sort(compar);
     planuri_lunare.innerHTML = "";
     planuri_anuale.innerHTML = "";
     ordine.innerHTML = "";
@@ -20,29 +24,32 @@ activityDb.onSnapshot((snapshot) => {
     note.innerHTML = "";
 
     for (let i = 0;i < activities.length;i++){
+        if (activities[i].data().link == "nodisplay123456789321453"){
+            continue;
+        }
         if (activities[i].data().category == 1){
-            planuri_lunare.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            planuri_lunare.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 2){
-            planuri_anuale.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            planuri_anuale.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 3){
-            ordine.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            ordine.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 4){
-            buget.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            buget.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 5){
-           sedinte.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+           sedinte.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 5){
-            decizii.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            decizii.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 6){
-            programe.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            programe.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
         if (activities[i].data().category == 7){
-            note.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${i+1}.${activities[i].data().title}</a>`
+            note.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
 
     }

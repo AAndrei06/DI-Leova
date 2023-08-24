@@ -5,9 +5,13 @@ let evaluare = document.getElementById("evaluare");
 let planuri = document.getElementById("planuri");
 let activity = document.getElementById("activity");
 
+function compar(a,b){
+    return b.data().date_posted - a.data().date_posted;
+}
 
 reportDb.onSnapshot((snapshot) => {
     reports = snapshot.docs;
+    reports.sort(compar);
     response_manage.innerHTML = "";
     state.innerHTML = "";
     dits.innerHTML = "";
@@ -16,23 +20,26 @@ reportDb.onSnapshot((snapshot) => {
     activity.innerHTML = "";
 
     for (let i = 0;i < reports.length;i++){
+        if (reports[i].data().link == "nodisplay123456789321453"){
+            continue;
+        }
         if (reports[i].data().category == 1){
-            response_manage.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${i+1}.${reports[i].data().title}</a>`
+            response_manage.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
         if (reports[i].data().category == 2){
-            state.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${i+1}.${reports[i].data().title}</a>`
+            state.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
         if (reports[i].data().category == 3){
-            dits.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${i+1}.${reports[i].data().title}</a>`
+            dits.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
         if (reports[i].data().category == 4){
-            evaluare.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${i+1}.${reports[i].data().title}</a>`
+            evaluare.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
         if (reports[i].data().category == 5){
-           planuri.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${i+1}.${reports[i].data().title}</a>`
+           planuri.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
         if (reports[i].data().category == 5){
-            activitye.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${i+1}.${reports[i].data().title}</a>`
+            activitye.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
 
     }

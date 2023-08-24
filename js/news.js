@@ -8,6 +8,9 @@ eventsDb.onSnapshot((snapshot) => {
     let docs = snapshot.docs;
     docs.sort(compar);
     for (let i = 0;i < docs.length;i++){
+        if (docs[i].data().image == "nodisplay123456789321453"){
+            continue;
+        }
         html += `
         <div class = "news-object">
             <div class = "image-of-news">

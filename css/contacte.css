@@ -103,6 +103,7 @@
     top:10px;
 }
 
+
 .link-of-facebook{
     color: blue;
     font-weight: 700;
@@ -125,6 +126,7 @@
     height: 40px;
     margin-bottom: 20px;
 }
+
 
 @media all and (max-width:800px){
     .email-complete-form{
