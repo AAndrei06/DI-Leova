@@ -1,0 +1,131 @@
+.about-info{
+    width:70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.words-info{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.icons-for-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.fa-facebook{
+    color:blue;
+    font-size: 30px;
+    position: relative;
+    top:10px;
+}
+
+.contact-methods{
+    margin-left: 20px;
+}
+
+.method1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 3px;
+}
+
+.method1 p{
+    font-weight: 500;
+}
+
+.fa-envelope{
+    font-size: 30px;
+    position: relative;
+    top:10px;
+    color: black;
+}
+
+.fa-phone{
+    font-size: 30px;
+    position: relative;
+    top:10px;
+    color: rgb(1, 155, 1);
+}
+.email-complete-form{
+    width: 800px;
+    margin-bottom: 20px;
+    background-color:rgba(255,255,255,0.8);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.text-input-email{
+    width:80%;
+    font-size: 20px;
+    height: 30px;
+    outline: 0;
+    border-radius: 5px;
+    margin-left: 10%;
+    border: none;
+    margin-top: 20px;
+}
+
+.text-for-email{
+    width: 80%;
+    margin-left: 10%;
+    height: 300px;
+    resize: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.title-of-form{
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 10%;
+    color: #1a1a1a;
+    position: relative;
+    top:10px;
+}
+
+.link-of-facebook{
+    color: blue;
+    font-weight: 700;
+}
+
+.flex-wrap-ways{
+    margin-left: 10%;
+}
+
+.send-email-btn{
+    width: 80%;
+    margin-left: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    background-color: #3944BC;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width:800px){
+    .email-complete-form{
+        width: 100%;
+    }
+
+
+    .last-photo-logo{
+        margin-top: 40px;
+    }
+}

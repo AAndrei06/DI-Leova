@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminzone.css">
+    <link rel="icon" href="../photos/logo.png">
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <div class="form-spaces">
+        <div class="form-space">
+            <h3 class="title-of-form">Creare Noutate/Eveniment</h3>
+            <div class="field-1">
+                <p class="text-field">Linkul imaginii</p>
+                <input type="text" class="text-field-input" id="link-image-event">
+            </div>
+            <div class="field-2">
+                <p class="text-field">Continutul evenimentului</p>
+                <textarea class="text-area" id="content-of-event"></textarea>
+            </div>
+            <button class="post-news-btn" id="news-create-btn">Postează evenimentul/noutatea</button>
+        </div>
+        <div class="form-space">
+            <h3 class="title-of-form">Creare Activitate</h3>
+            <div class="field-1">
+                <p class="text-field">Numarul categoriei</p>
+                <input type="number" class="text-field-input" id="number-of-activity">
+            </div>
+            <div class="field-1">
+                <p class="text-field">Titlul activității</p>
+                <input type="text" class="text-field-input" id="title-activity-input">
+            </div>
+            <div class="field-1">
+                <p class="text-field">Linkul activității</p>
+                <input type="text" class="text-field-input" id="link-activity-input">
+            </div>
+
+            <button class="post-news-btn" id="activity-create-btn" style="position: relative;top:115px">Postează
+                activitatea</button>
+        </div>
+        <div class="form-space">
+            <h3 class="title-of-form">Creare Raport</h3>
+            <div class="field-1">
+                <p class="text-field">Numarul categoriei</p>
+                <input type="number" class="text-field-input" id="number-of-report">
+            </div>
+            <div class="field-1">
+                <p class="text-field">Titlul raportului</p>
+                <input type="text" class="text-field-input" id="title-of-report">
+            </div>
+            <div class="field-1">
+                <p class="text-field">Linkul raportului</p>
+                <input type="text" class="text-field-input" id="link-of-report">
+            </div>
+
+            <button class="post-news-btn" id="report-create-btn" style="position: relative;top:115px">Postează
+                raportul</button>
+        </div>
+    </div>
+    <div class="object-space-delete">
+        <div class="events-space-delete">
+            <div class="event-delete">
+                <div class="event-image">
+                    <img src="../photos/people.jpg" width="100%" height="150">
+                </div>
+                <div class="content-event-delete">
+                    <p>Lorem ipsum dolor sit amet
+                        sfsdfsdfsdfhkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkj
+                    </p>
+                </div>
+                <button class="delete-event-btn">Șterge</button>
+            </div>
+            <div class="event-delete">
+                <div class="event-image">
+                    <img src="../photos/people.jpg" width="100%" height="150">
+                </div>
+                <div class="content-event-delete">
+                    <p>Lorem ipsum dolor sit amet
+                        sfsdfsdfsdfhkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkj
+                    </p>
+                </div>
+                <button class="delete-event-btn">Șterge Evenimentul</button>
+            </div>
+        </div>
+        <div class = "activity-delete">
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "#">loremsdjjsfjsdhjfhsjdbfhdbvhbfdvbydfvybdbvsdbvbdhbdshbvuhbdsbshdubvshdbvhbsdhbvshudbvhdbfh</a>
+                </div>
+                <div class = "btn-delete">
+                 <button class = "activity-delete-btn">Șterge Activitatea</button>
+                </div>
+            </div>
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "#">loremsdjjsfjsdhjfhsjdbfhdbvhbfdvbydfvybdbvsdbvbdhbdshbvuhbdsbshdubvshdbvhbsdhbvshudbvhdbfh</a>
+                </div>
+                <div class = "btn-delete">
+                 <button class = "activity-delete-btn">Șterge Activitatea</button>
+                </div>
+            </div>
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "#">loremsdjjsfjsdhjfhsjdbfhdbvhbfdvbydfvybdbvsdbvbdhbdshbvuhbdsbshdubvshdbvhbsdhbvshudbvhdbfh</a>
+                </div>
+                <div class = "btn-delete">
+                 <button class = "activity-delete-btn">Șterge Activitatea</button>
+                </div>
+            </div>
+        </div>
+        <div class = "report-delete">
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "#">loremsdjjsfjsdhjfhsjdbfhdtgdfgfgfdggdfgdf
+                        sfsdfsdfsdfhkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkjfsfsf fs sd f sdf sdfsdfs</a>
+                </div>
+                <div class = "btn-delete">
+                 <button class = "activity-delete-btn">Șterge Activitatea</button>
+                </div>
+            </div>
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "#">loremsdjjsfjsdhjfhsjdbfhdbvhbfdvbydfvybdbvsdbvbdhbdshbvuhbdsbshdubvshdbvhbsdhbvshudbvhdbfh</a>
+                </div>
+                <div class = "btn-delete">
+                 <button class = "activity-delete-btn">Șterge Activitatea</button>
+                </div>
+            </div>
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "#">loremsdjjsfjsdhjfhsjdbfhdbvhbfdvbydfvybdbvsdbvbdhbdshbvuhbdsbshdubvshdbvhbsdhbvshudbvhdbfh</a>
+                </div>
+                <div class = "btn-delete">
+                 <button class = "activity-delete-btn">Șterge Raportul</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
+<script src = "../js/main.js"></script>
+<script src="../js/adminzone.js"></script>
+
+</html>

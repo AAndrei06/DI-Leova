@@ -1,0 +1,141 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../photos/home.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+.form-spaces{
+    width:1780px;
+    margin-left: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+.form-space{
+    width:550px;
+    height: 420px;
+    background-color: wheat;
+}
+
+.text-field-input{
+    width:500px;
+    font-size: 20px;
+    position: relative;
+}
+
+.title-of-form{
+    margin: 5px;
+    margin-left: 20px;
+    border-bottom: 2px solid black;
+    width: 300px;
+}
+
+.text-area{
+    width:500px;
+    height: 200px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+.field-1, .field-2{
+    margin-left: 20px;
+}
+
+.post-news-btn{
+    width:90%;
+    margin-left: 5%;
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+
+.text-field{
+    position: relative;
+    top:10px;
+}
+
+.object-space-delete{
+    width:1750px;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.event-delete{
+    width: 280px;
+    height: 480px;
+    background-color: white;
+    position: relative;
+    border: 2px solid blue;
+    margin: 30px;
+    margin-left: 120px;
+}
+
+.content-event-delete{
+    word-break: break-all;
+}
+
+.content-event-delete p{
+    margin: 10px;
+}
+
+.delete-event-btn{
+    position: absolute;
+    bottom: 0px;
+    width:100%;
+    height: 30px;
+    font-size: 20px;
+    background-color: #dc4546;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.activity-delete-object{
+    width:400px;
+    height:auto;
+    background-color: white;
+    margin: 30px;
+    margin-left: 200px;
+    word-break: break-all;
+    position: relative;
+}
+
+.content-activity-delete{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.content-activity-delete a{
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+
+.activity-delete-btn{
+    width:100%;
+    height: 30px;
+    font-size: 20px;
+    background-color: #dc4546;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}

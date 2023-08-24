@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rapoarte</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/report.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel = "icon" href = "../photos/logo.png">
+        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="top-banner">
+                <div class = "menu-btn-menu"><i class="fa-solid fa-bars menu-icon-font"></i></div>
+                <div class = "photo-banner">
+                    <div class = "logo-space">
+                        <img class = "logo-image-cls" src = "../photos/logo.png" draggable="false" width = "150" height="100">
+                    </div>
+                </div>
+                <div class = "links-for-site">
+                    <div class = "link-object"><a href="#">Acasă</a></div>
+                    <div class = "link-object"><a href="#">Noutăți/Evenimente</a></div>
+                    <div class = "link-object"><a href="#">Rapoarte</a></div>
+                    <div class = "link-object"><a href="#">Contacte</a></div>
+                    <div class = "link-object"><a href="#">Activități</a></div>
+                </div>
+            </div>
+            <div class="menu-slide-area">
+                <div class = "close-menu-slide"><i class="fa-solid fa-xmark xmark-btn-close"></i></div>
+                <div class = "image-of-slide-menu"><img src = "../photos/logo.png" draggable="false" width="200" height="120"></div>
+                <div class = "slide-menu-links">
+                    <div class = "link-menu-slide"><a href="#">Acasă</a></div>
+                    <div class = "link-menu-slide"><a href="#">Noutăți/Evenimente</a></div>
+                    <div class = "link-menu-slide"><a href="#">Rapoarte</a></div>
+                    <div class = "link-menu-slide"><a href="#">Contacte</a></div>
+                    <div class = "link-menu-slide"><a href="#">Activități</a></div>
+                </div>
+                
+            </div>
+        </header>
+        <main>
+            <div class = "container-for-report">
+                <h3 class = "title-of-report">Declarații de răspundere managerială</h3>
+                <div class = "group-of-report" id = "response-manage">
+                </div>    
+                <h3 class = "title-of-report">Starea sistemului de învățământ</h3>
+                <div class = "group-of-report" id = "state">          
+                </div>    
+                <h3 class = "title-of-report">Rapoarte de activitate DITS</h3>
+                <div class = "group-of-report" id = "dits">
+                </div>      
+                <h3 class = "title-of-report">Rapoarte de evaluare instituțională</h3>
+                <div class = "group-of-report" id = "evaluare">
+                </div>   
+                <h3 class = "title-of-report">Rapoarte de implementare a planurilor anticorupție</h3>
+                <div class = "group-of-report" id = "planuri">
+                </div>  
+                <h3 class = "title-of-report">Rapoarte de activitate a instituțiilor</h3>
+                <div class = "group-of-report" id = "activity">
+                </div> 
+           </div>
+        </main>
+    </body>
+    <script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
+    <script src = "../js/general.js"></script>
+    <script src = "../js/main.js"></script>
+    <script src = "../js/report.js"></script>
+</html>
