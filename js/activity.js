@@ -42,13 +42,13 @@ activityDb.onSnapshot((snapshot) => {
         if (activities[i].data().category == 5){
            sedinte.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
-        if (activities[i].data().category == 5){
+        if (activities[i].data().category == 6){
             decizii.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
-        if (activities[i].data().category == 6){
+        if (activities[i].data().category == 7){
             programe.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
-        if (activities[i].data().category == 7){
+        if (activities[i].data().category == 8){
             note.innerHTML += `<a target = "_blank" href = "${activities[i].data().link}">${activities[i].data().title}</a>`
         }
 

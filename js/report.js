@@ -38,8 +38,8 @@ reportDb.onSnapshot((snapshot) => {
         if (reports[i].data().category == 5){
            planuri.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
-        if (reports[i].data().category == 5){
-            activitye.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
+        if (reports[i].data().category == 6){
+            activity.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
 
     }
