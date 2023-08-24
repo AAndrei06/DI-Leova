@@ -6,9 +6,16 @@
 }
 
 .words-info{
-    font-size: 25px;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.words-info img{
+    border-radius: 5px;
+    width: 800px;
+}
+
 
 .icons-for-about{
     display: flex;
@@ -124,8 +131,18 @@
         width: 100%;
     }
 
-
     .last-photo-logo{
         margin-top: 40px;
+    }
+
+    .words-info img{
+        border-radius: 5px;
+        width: 98%;
+        margin-left: 1%;
+        margin-top: 20px;
+    }
+
+    .about-info{
+        width: 100%;
     }
 }

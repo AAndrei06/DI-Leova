@@ -1,100 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contacte</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/contacte.css">
-        <link rel = "icon" href = "../photos/logo.png">
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-        (function(){
+
+<head>
+    <title>Contacte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/contacte.css">
+    <link rel="icon" href="../photos/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
             emailjs.init("qwM7CxJ6-sge3zJxy");
         })();
-        </script>
-    </head>
-    <body>
-        <header>
-            <div class="top-banner">
-                <div class = "menu-btn-menu"><i class="fa-solid fa-bars menu-icon-font"></i></div>
-                <div class = "photo-banner">
-                    <div class = "logo-space">
-                        <img class = "logo-image-cls" src = "../photos/logo.png" draggable="false" width = "150" height="100">
-                    </div>
-                </div>
-                <div class = "links-for-site">
-                    <div class = "link-object"><a href="../home.html">Acasă</a></div>
-                    <div class = "link-object"><a href="news.html">Noutăți/Evenimente</a></div>
-                    <div class = "link-object"><a href="report.html">Rapoarte</a></div>
-                    <div class = "link-object"><a href="contacte.html">Contacte</a></div>
-                    <div class = "link-object"><a href="activity.html">Activități</a></div>
-                </div>
-            </div>
-            <div class="menu-slide-area">
-                <div class = "close-menu-slide"><i class="fa-solid fa-xmark xmark-btn-close"></i></div>
-                <div class = "image-of-slide-menu"><img src = "../photos/logo.png" draggable="false" width="200" height="120"></div>
-                <div class = "slide-menu-links">
-                    <div class = "link-menu-slide"><a href="../home.html">Acasă</a></div>
-                    <div class = "link-menu-slide"><a href="news.html">Noutăți/Evenimente</a></div>
-                    <div class = "link-menu-slide"><a href="report.html">Rapoarte</a></div>
-                    <div class = "link-menu-slide"><a href="contacte.html">Contacte</a></div>
-                    <div class = "link-menu-slide"><a href="activity.html">Activități</a></div>
-                </div>
-                
-            </div>
-        </header>
-        <main>
-            <div class = "about-info">
-                <div class = "icons-for-about">
-                    <div>
-                        <img src = "../photos/stema.png" draggable="false" style = "user-select: none;" width="200">
-                    </div>
-                    <div>
-                        <img src = "../photos/logo.png" draggable="false" style="position: relative;top:20px;user-select: none;" width="250">
-                    </div>
-                    <div>
-                        <img src = "../photos/leova.png" draggable="false" style = "user-select: none;" class = "last-photo-logo" width="200">
-                    </div>
-                </div>
-                <div class = "words-info">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </script>
+</head>
 
-                        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-                </div>
-                
-            </div>
-            <div class = "email-complete-form">
-                <h3 class = "title-of-form">Contactează-ne</h3>
-                <div class = "first-text-input">
-                    <input type="text" class = "text-input-email" id = "name-input-form" placeholder="Numele și prenumele">
-                </div>
-                <div class = "first-text-input">
-                    <input type="email" class = "text-input-email" id = "email-adress-form" placeholder="Adresa de email">
-                </div>
-                <textarea class = "text-for-email" placeholder="Conținutul mesajului" id = "email-content-msg-form"></textarea>
-                <button class = "send-email-btn" id = "send-email-btn">Trimite</button>
-                <div class = "flex-wrap-ways">
-                    
-                    <div class = "method1">
-                        <i class="fa-brands fa-facebook"></i><p><a target = "_blank" class="link-of-facebook" href = "https://www.facebook.com/directia.invatamant.92/">Direcția învățământ Leova</a></p>
-                    </div>
-                    <div class = "method1">
-                        <i class="fa-regular fa-envelope"></i><p>dicrleova@gmail.com</p>
-                    </div>
-                    <div class = "method1">
-                        <i class="fa-solid fa-phone"></i><p>02342423432</p>
-                    </div>
+<body>
+    <header>
+        <div class="top-banner">
+            <div class="menu-btn-menu"><i class="fa-solid fa-bars menu-icon-font"></i></div>
+            <div class="photo-banner">
+                <div class="logo-space">
+                    <img class="logo-image-cls" src="../photos/logo.png" draggable="false" width="150" height="100">
                 </div>
             </div>
-        </main>
-        <footer style="position: relative;bottom: -600px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.59218933653!2d28.250523790700708!3d46.47658523120772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9ffd5b9b58db7%3A0xb37d86406f0d9f87!2sOficiul%20Teritorial%20de%20Informare%20a%20Parlamentului%20-%20Leova!5e0!3m2!1sro!2s!4v1692799479903!5m2!1sro!2s" width="100%" height="450" style="border:0;position: absolute;bottom: 0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </footer>
-    </body>
-    <script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
-    <script src = "../js/contacte.js"></script>
-    <script src = "../js/general.js"></script>
+            <div class="links-for-site">
+                <div class="link-object"><a href="../home.html">Acasă</a></div>
+                <div class="link-object"><a href="news.html">Noutăți/Evenimente</a></div>
+                <div class="link-object"><a href="report.html">Rapoarte</a></div>
+                <div class="link-object"><a href="contacte.html">Contacte</a></div>
+                <div class="link-object"><a href="activity.html">Activități</a></div>
+            </div>
+        </div>
+        <div class="menu-slide-area">
+            <div class="close-menu-slide"><i class="fa-solid fa-xmark xmark-btn-close"></i></div>
+            <div class="image-of-slide-menu"><img src="../photos/logo.png" draggable="false" width="200" height="120">
+            </div>
+            <div class="slide-menu-links">
+                <div class="link-menu-slide"><a href="../home.html">Acasă</a></div>
+                <div class="link-menu-slide"><a href="news.html">Noutăți/Evenimente</a></div>
+                <div class="link-menu-slide"><a href="report.html">Rapoarte</a></div>
+                <div class="link-menu-slide"><a href="contacte.html">Contacte</a></div>
+                <div class="link-menu-slide"><a href="activity.html">Activități</a></div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="about-info">
+            <div class="icons-for-about">
+                <div>
+                    <img src="../photos/stema.png" draggable="false" style="user-select: none;" width="200">
+                </div>
+                <div>
+                    <img src="../photos/logo.png" draggable="false"
+                        style="position: relative;top:20px;user-select: none;" width="250">
+                </div>
+                <div>
+                    <img src="../photos/leova.png" draggable="false" style="user-select: none;" class="last-photo-logo"
+                        width="200">
+                </div>
+            </div>
+            <div class="words-info">
+                <div class = "main-photo">
+                    <img src = "../photos/lista.png">
+                </div>
+            </div>
+
+        </div>
+        <div class="email-complete-form">
+            <h3 class="title-of-form">Contactează-ne</h3>
+            <div class="first-text-input">
+                <input type="text" class="text-input-email" id="name-input-form" placeholder="Numele și prenumele">
+            </div>
+            <div class="first-text-input">
+                <input type="email" class="text-input-email" id="email-adress-form" placeholder="Adresa de email">
+            </div>
+            <textarea class="text-for-email" placeholder="Conținutul mesajului" id="email-content-msg-form"></textarea>
+            <button class="send-email-btn" id="send-email-btn">Trimite</button>
+            <div class="flex-wrap-ways">
+
+                <div class="method1">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p><a target="_blank" class="link-of-facebook"
+                            href="https://www.facebook.com/directia.invatamant.92/">Direcția învățământ Leova</a></p>
+                </div>
+                <div class="method1">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>dicrleova@gmail.com</p>
+                </div>
+                <div class="method1">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>02342423432</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="position: relative;bottom: -600px;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2747.59218933653!2d28.250523790700708!3d46.47658523120772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c9ffd5b9b58db7%3A0xb37d86406f0d9f87!2sOficiul%20Teritorial%20de%20Informare%20a%20Parlamentului%20-%20Leova!5e0!3m2!1sro!2s!4v1692799479903!5m2!1sro!2s"
+            width="100%" height="450" style="border:0;position: absolute;bottom: 0px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
+<script src="../js/contacte.js"></script>
+<script src="../js/general.js"></script>
+
 </html>
