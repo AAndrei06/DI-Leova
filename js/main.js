@@ -15,6 +15,10 @@ const db = firebase.firestore();
 const activityDb = db.collection("activity");
 const eventsDb = db.collection("events");
 const reportDb = db.collection("report");
+const mngedDb = db.collection("mnged");
+const sapDb = db.collection("sap");
+const tabaraDb = db.collection("tabara");
+const transportDb = db.collection("tranport");
 
 function formatareData(stamp){
     let data = new Date(stamp);

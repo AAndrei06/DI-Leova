@@ -2,7 +2,6 @@ let response_manage = document.getElementById("response-manage");
 let state = document.getElementById("state");
 let dits = document.getElementById("dits");
 let evaluare = document.getElementById("evaluare");
-let planuri = document.getElementById("planuri");
 let activity = document.getElementById("activity");
 
 function compar(a,b){
@@ -16,7 +15,6 @@ reportDb.onSnapshot((snapshot) => {
     state.innerHTML = "";
     dits.innerHTML = "";
     evaluare.innerHTML = "";
-    planuri.innerHTML = "";
     activity.innerHTML = "";
 
     for (let i = 0;i < reports.length;i++){
@@ -36,9 +34,6 @@ reportDb.onSnapshot((snapshot) => {
             evaluare.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
         if (reports[i].data().category == 5){
-           planuri.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
-        }
-        if (reports[i].data().category == 6){
             activity.innerHTML += `<a target = "_blank" href = "${reports[i].data().link}">${reports[i].data().title}</a>`
         }
 

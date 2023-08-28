@@ -111,7 +111,7 @@ body{
     height:auto;
     background-color: white;
     margin: 30px;
-    margin-left: 200px;
+
     word-break: break-all;
     position: relative;
 }
@@ -138,4 +138,18 @@ body{
     border: none;
     cursor: pointer;
     margin-top: 20px;
+}
+
+
+
+.report-cont-delete{
+
+    position: relative;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+.activity-delete{
+    margin-top: 150px;
+    margin-left: 40px;
 }
