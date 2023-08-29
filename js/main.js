@@ -19,6 +19,8 @@ const mngedDb = db.collection("mnged");
 const sapDb = db.collection("sap");
 const tabaraDb = db.collection("tabara");
 const transportDb = db.collection("tranport");
+const linksDb = db.collection("links");
+const contactDb = db.collection("contact");
 
 function formatareData(stamp){
     let data = new Date(stamp);

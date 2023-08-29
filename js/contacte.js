@@ -47,3 +47,11 @@ sendBtn.addEventListener("click",() => {
         sendMail();
     }
 });
+
+
+
+contactDb.onSnapshot((snapshot) => {
+    contacts = snapshot.docs;
+
+    document.querySelector(".photo-list-workers").src = contacts[0].data().photo;
+});
