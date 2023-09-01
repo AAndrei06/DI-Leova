@@ -106,6 +106,17 @@ body{
     cursor: pointer;
 }
 
+.back-home{
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 .activity-delete-object{
     width:400px;
     height:auto;
