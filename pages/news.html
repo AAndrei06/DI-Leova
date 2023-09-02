@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Noutăți/Evenimente</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/news.css">
-        <link rel = "icon" href = "../photos/logo.png">
-        <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+<head>
+    <title>Noutăți/Evenimente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="icon" href="../photos/logo.png">
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="top-banner">
-                <div class="menu-btn-menu"><i class="fa-solid fa-bars menu-icon-font"></i></div>
-                <div class="photo-banner">
-                    <div class="logo-space">
-                        <a href = "../home.html"><img class="logo-image-cls" src="../photos/logo.png" draggable="false" width="150" height="100"></a>
-                    </div>
-                </div>
-                <div class="links-for-site">
-                    <div class="link-object"><a href="../pages/news.html">Noutăți/Evenimente</a></div>
-                    <div class="link-object"><a href="../pages/activity.html">Activități</a></div>
-                    <div class="link-object"><a href="../pages/mnged.html">Management Educațional</a></div>
-                    <div class="link-object"><a href="../pages/report.html">Rapoarte</a></div>
-                    <div class="link-object"><a href="../pages/sap.html">SAP</a></div>
-                    <div class="link-object"><a href="../pages/transport.html">Transport</a></div>
-                    <div class="link-object"><a href="../pages/tabara.html">Tabăra</a></div>
-                    <div class="link-object"><a href="../pages/contacte.html">Contacte</a></div>
-                    <div class="link-object"><a href="../pages/links.html">Link-uri Utile</a></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top-banner">
+            <div class="menu-btn-menu"><i class="fa-solid fa-bars menu-icon-font"></i></div>
+            <div class="photo-banner">
+                <div class="logo-space">
+                    <a href="../home.html"><img class="logo-image-cls" src="../photos/logo.png" draggable="false"
+                            width="150" height="100"></a>
                 </div>
             </div>
-            <div class="menu-slide-area">
-                <div class="close-menu-slide"><i class="fa-solid fa-xmark xmark-btn-close"></i></div>
-                <div class="image-of-slide-menu"><img src="../photos/logo.png" draggable="false" width="200" height="120">
-                </div>
-                <div class="slide-menu-links">
-                    <div class = "link-menu-slide"><a href="../home.html">Acasă</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/news.html">Noutăți/Evenimente</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/activity.html">Activități</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/mnged.html">Management Educațional</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/report.html">Rapoarte</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/sap.html">SAP</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/transport.html">Transport</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/tabara.html">Tabăra</a></div>          
-                        <div class = "link-menu-slide"><a href="../pages/contacte.html">Contacte</a></div>
-                        <div class = "link-menu-slide"><a href="../pages/links.html">Link-uri Utile</a></div>
-                </div>
-    
+            <div class="links-for-site">
+                <div class="link-object"><a href="../pages/news.html">Noutăți/Evenimente</a></div>
+                <div class="link-object"><a href="../pages/activity.html">Activități</a></div>
+                <div class="link-object"><a href="../pages/mnged.html">Management Educațional</a></div>
+                <div class="link-object"><a href="../pages/report.html">Rapoarte</a></div>
+                <div class="link-object"><a href="../pages/sap.html">SAP</a></div>
+                <div class="link-object"><a href="../pages/transport.html">Transport</a></div>
+                <div class="link-object"><a href="../pages/tabara.html">Tabăra</a></div>
+                <div class="link-object"><a href="../pages/contacte.html">Contacte</a></div>
+                <div class="link-object"><a href="../pages/links.html">Link-uri Utile</a></div>
             </div>
-        </header>
-        <main>
-            <h1 class = "news-and-events">Știri și Evenimente</h1>
-            <div class = "news-container">
-                
-            </div>   
-        </main>
-    </body>
-    <script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
-    <script src = "../js/general.js"></script>
-    <script src = "../js/main.js"></script>
-    <script src = "../js/news.js"></script>
+        </div>
+        <div class="menu-slide-area">
+            <div class="close-menu-slide"><i class="fa-solid fa-xmark xmark-btn-close"></i></div>
+            <div class="image-of-slide-menu"><img src="../photos/logo.png" draggable="false" width="200" height="120">
+            </div>
+            <div class="slide-menu-links">
+                <div class="link-menu-slide"><a href="../home.html">Acasă</a></div>
+                <div class="link-menu-slide"><a href="../pages/news.html">Noutăți/Evenimente</a></div>
+                <div class="link-menu-slide"><a href="../pages/activity.html">Activități</a></div>
+                <div class="link-menu-slide"><a href="../pages/mnged.html">Management Educațional</a></div>
+                <div class="link-menu-slide"><a href="../pages/report.html">Rapoarte</a></div>
+                <div class="link-menu-slide"><a href="../pages/sap.html">SAP</a></div>
+                <div class="link-menu-slide"><a href="../pages/transport.html">Transport</a></div>
+                <div class="link-menu-slide"><a href="../pages/tabara.html">Tabăra</a></div>
+                <div class="link-menu-slide"><a href="../pages/contacte.html">Contacte</a></div>
+                <div class="link-menu-slide"><a href="../pages/links.html">Link-uri Utile</a></div>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="con-swiper">
+            <div style=" --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                   
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper" style = "margin-top: 10px;">
+                    
+                </div>
+            </div>
+        </div>
+
+        <h1 class="news-and-events" style = "margin-top: 80px;">Știri și Evenimente</h1>
+        <div class="news-container">
+
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
+<script src="../js/general.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/news.js"></script>
+
 </html>

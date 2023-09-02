@@ -223,6 +223,28 @@ if (prompt("Introdu Parola") == "dileova2023admin") {
     });
 
 
+
+    let link_event_field = document.querySelector("#link-of-photo-events");
+    let link_event_btn = document.getElementById("photo-add-event-btn");
+
+    link_event_btn.addEventListener("click", () => {
+
+        let date8 = new Date();
+
+        let link = {
+            link: link_event_field.value,
+            date_posted: date8.getTime(),
+        }
+
+        sliderDb.add(link).then(() => {
+
+            alert("Imagine postată cu succes!!!");
+            link_event_field.value = "";
+        });
+
+    });
+
+
     let events_group = document.getElementById("event-delete-id-group");
 
     function compar(a, b) {
@@ -529,6 +551,52 @@ if (prompt("Introdu Parola") == "dileova2023admin") {
                 if (confirm("Sunteți sigur că doriți să ștergeți acest link util?") == true) {
                     linksDb.doc(btns_links[i].value).delete().then(() => {
                         alert("Link util șters cu succes!!!");
+                    });
+                }
+            });
+        }
+
+    });
+
+
+
+
+
+
+
+
+    let carusel_group = document.getElementById("carusel-delete");
+
+    sliderDb.onSnapshot((snapshot) => {
+
+        let sliders = snapshot.docs;
+        carusel_group.innerHTML = "";
+        sliders.sort(compar);
+
+        for (let i = 0; i < sliders.length; i++) {
+            if (sliders[i].data().link == "nodisplay123456789321453") {
+                continue;
+            }
+
+            carusel_group.innerHTML += `
+            <div class = "activity-delete-object">
+                <div class = "content-activity-delete">
+                    <a href = "${sliders[i].data().link}">${sliders[i].data().link}</a>
+                </div>
+                <div class = "btn-delete">
+                    <button class = "activity-delete-btn" value = "${sliders[i].id}" id = "carusel-del-btn">Șterge Imagine Carusel</button>
+                </div>
+            </div>
+            `;
+        }
+
+        let btns_links = document.querySelectorAll("#carusel-del-btn");
+
+        for (let i = 0; i < btns_links.length; i++) {
+            btns_links[i].addEventListener('click', function () {
+                if (confirm("Sunteți sigur că doriți să ștergeți această imagine?") == true) {
+                    sliderDb.doc(btns_links[i].value).delete().then(() => {
+                        alert("Imagine ștearsă cu succes!!!");
                     });
                 }
             });

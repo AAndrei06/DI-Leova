@@ -21,6 +21,7 @@ const tabaraDb = db.collection("tabara");
 const transportDb = db.collection("tranport");
 const linksDb = db.collection("links");
 const contactDb = db.collection("contact");
+const sliderDb = db.collection("slider");
 
 function formatareData(stamp){
     let data = new Date(stamp);
