@@ -14,7 +14,7 @@ eventsDb.onSnapshot((snapshot) => {
         html += `
         <div class = "news-object">
             <div class = "image-of-news">
-                <img src = "${docs[i].data().image}" width="100%" height="200">
+                <img src = "${docs[i].data().image}" width="100%" height="240">
             </div>
             <div class = "content-of-news">
                 <p>${docs[i].data().content}</p>
